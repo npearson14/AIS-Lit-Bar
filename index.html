@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIS Lit Bar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #000000;
+      background-color: #F5F5F5; /* Soft background */
+    }
+    header, nav, footer {
+      background-color: #371D10;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+    .products, .contact-form {
+      margin: 20px 0;
+    }
+    input, textarea {
+      width: 80%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #371D10;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #371D10;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AIS Lit Bar</h1>
+    <p>Inspiration & Coffee for those looking for inspiration in a book and coffee.</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="products">
+      <h2>Our Products</h2>
+      <ul>
+        <li>New Books, Used Books and Magazines</li>
+        <li>Coffees (Hot & Cold), Pastries</li>
+        <li>Events (Poetry Nights, Book Club, Creative Writing)</li>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="https://formsubmit.co/your-email@example.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AIS Lit Bar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
