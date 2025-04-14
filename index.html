@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,13 +10,16 @@
       margin: 0;
       padding: 0;
       color: #000000;
-      background-color: #F5F5F5; /* Soft background */
+      background-color: #F5F5F5;
+      background-image: url('coffee.jpg'); /* Ensure you've uploaded this file */
+      background-size: cover;
+      background-position: center;
     }
     header, nav, footer {
-      background-color: #371D10;
+      background-color: #25100E;
       color: #ffffff;
       text-align: center;
-      padding: 10px 0;
+      padding: 15px 0;
     }
     nav a {
       color: #ffffff;
@@ -27,18 +30,18 @@
       padding: 20px;
       text-align: center;
     }
-    .products, .contact-form {
+    .products, .inquiry-form {
       margin: 20px 0;
     }
-    input, textarea {
+    input, textarea, select {
       width: 80%;
       margin: 10px 0;
       padding: 10px;
-      border: 1px solid #371D10;
+      border: 1px solid #25100E;
       border-radius: 5px;
     }
     button {
-      background-color: #371D10;
+      background-color: #25100E;
       color: #ffffff;
       padding: 10px 20px;
       border: none;
@@ -52,11 +55,11 @@
     <h1>AIS Lit Bar</h1>
     <p>Inspiration & Coffee for those looking for inspiration in a book and coffee.</p>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#menu">Menu</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
@@ -70,13 +73,20 @@
       </ul>
     </section>
 
-    <section class="contact-form">
-      <h2>Contact Us</h2>
+    <section class="inquiry-form">
+      <h2>Event Inquiry</h2>
       <form action="https://formsubmit.co/your-email@example.com" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
+        <select name="event_type" required>
+          <option value="">Select Event Type</option>
+          <option value="Poetry Night">Poetry Night</option>
+          <option value="Book Club">Book Club</option>
+          <option value="Creative Writing">Creative Writing</option>
+        </select>
+        <textarea name="description" rows="4" placeholder="Event Description" required></textarea>
+        <input type="hidden" name="_autoresponse" value="Thank you for inquiring about our events! Someone will reach out to you within 24 hours.">
+        <button type="submit">Send Inquiry</button>
       </form>
     </section>
   </div>
